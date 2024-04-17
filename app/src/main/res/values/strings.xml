@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">lab01</string>
+    <string name="btn_add">add</string>
+    <string name="btn_sub">sub</string>
+    <string name="btn_mul">mul</string>
+    <string name="btn_div">div</string>
+    <string name="result">...</string>
+    <string name="btn_sin">Sin</string>
+    <string name="btn_cos">Cos</string>
+    <string name="btn_tan">Tan</string>
+    <string name="btn_sqrt">Square root</string>
+    <string name="btn_pow">pow</string>
+    <string name="btn_mod">mod</string>
+    <string name="sw_rad">Radians</string>
+</resources>
