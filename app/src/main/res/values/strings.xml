@@ -4,7 +4,7 @@
     <string name="btn_sub">sub</string>
     <string name="btn_mul">mul</string>
     <string name="btn_div">div</string>
-    <string name="result">...</string>
+    <string name="result">…</string>
     <string name="btn_sin">Sin</string>
     <string name="btn_cos">Cos</string>
     <string name="btn_tan">Tan</string>
@@ -12,4 +12,9 @@
     <string name="btn_pow">pow</string>
     <string name="btn_mod">mod</string>
     <string name="sw_rad">Radians</string>
+    <string name="num_a">a:</string>
+    <string name="num_b">b:</string>
+    <string name="res">Result:</string>
+    <string name="other_funcs">Функции ниже применяются к числу a</string>
+    <string name="hint">type number</string>
 </resources>

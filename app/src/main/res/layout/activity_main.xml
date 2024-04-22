@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -15,20 +14,24 @@
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/tv_a"
             android:layout_width="62dp"
             android:layout_height="match_parent"
             android:gravity="center_horizontal|center_vertical"
-            android:text="a:"
+            android:text="@string/num_a"
             android:textSize="20sp" />
 
         <EditText
             android:id="@+id/a_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:autofillHints=""
             android:ems="10"
+            android:hint="@string/hint"
             android:inputType="number|numberDecimal|numberSigned"
-            android:textSize="20sp" />
+            android:textColorHint="#78909C"
+            android:textSize="20sp"
+            tools:ignore="DuplicateSpeakableTextCheck" />
     </LinearLayout>
 
     <LinearLayout
@@ -38,20 +41,23 @@
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/tv_b"
             android:layout_width="62dp"
             android:layout_height="match_parent"
             android:gravity="center_horizontal|center_vertical"
-            android:text="b:"
+            android:text="@string/num_b"
             android:textSize="20sp" />
 
         <EditText
             android:id="@+id/b_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:autofillHints=""
             android:ems="10"
-            android:gravity="left|center_vertical"
+            android:gravity="start|center_vertical"
+            android:hint="@string/hint"
             android:inputType="number|numberDecimal|numberSigned"
+            android:textColorHint="#78909C"
             android:textSize="20sp" />
     </LinearLayout>
 
@@ -61,20 +67,21 @@
         android:gravity="center_vertical">
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/tv_res"
             android:layout_width="81dp"
             android:layout_height="match_parent"
             android:gravity="center_horizontal|center_vertical"
-            android:text="Result:"
+            android:text="@string/res"
             android:textSize="20sp"
+            tools:ignore="TextSizeCheck"
             tools:text="Result:" />
 
         <TextView
             android:id="@+id/result_output"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_weight="2"
-            android:gravity="left|center_vertical"
+            android:gravity="start|center_vertical"
             android:text="@string/result"
             android:textSize="20sp" />
     </LinearLayout>
@@ -87,7 +94,8 @@
 
         <Button
             android:id="@+id/add_button"
-            android:layout_width="10dp"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:onClick="universal_code"
@@ -101,7 +109,8 @@
             android:layout_weight="1"
             android:onClick="universal_code"
             android:text="@string/btn_sub"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            style="?android:attr/buttonBarButtonStyle" />
     </LinearLayout>
 
     <LinearLayout
@@ -112,7 +121,8 @@
 
         <Button
             android:id="@+id/div_button"
-            android:layout_width="108dp"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:onClick="universal_code"
@@ -121,7 +131,8 @@
 
         <Button
             android:id="@+id/mul_button"
-            android:layout_width="43dp"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:onClick="universal_code"
@@ -142,7 +153,8 @@
             android:layout_weight="1"
             android:onClick="universal_code"
             android:text="@string/btn_pow"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            style="?android:attr/buttonBarButtonStyle" />
 
         <Button
             android:id="@+id/mod_button"
@@ -151,7 +163,8 @@
             android:layout_weight="1"
             android:onClick="universal_code"
             android:text="@string/btn_mod"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            style="?android:attr/buttonBarButtonStyle" />
     </LinearLayout>
 
     <LinearLayout
@@ -160,12 +173,12 @@
         android:orientation="horizontal" >
 
         <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
+            android:id="@+id/tv_remark"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:layout_weight="1"
-            android:text="Функции ниже применяются к числу a"
+            android:text="@string/other_funcs"
             android:textAlignment="center"
             android:textSize="20sp" />
     </LinearLayout>
@@ -183,7 +196,8 @@
             android:layout_weight="1"
             android:onClick="universal_code"
             android:text="@string/btn_sin"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            style="?android:attr/buttonBarButtonStyle" />
 
         <Button
             android:id="@+id/cos_button"
@@ -192,7 +206,8 @@
             android:layout_weight="1"
             android:onClick="universal_code"
             android:text="@string/btn_cos"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            style="?android:attr/buttonBarButtonStyle" />
 
         <Button
             android:id="@+id/tan_button"
@@ -201,7 +216,8 @@
             android:layout_weight="1"
             android:onClick="universal_code"
             android:text="@string/btn_tan"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            style="?android:attr/buttonBarButtonStyle" />
     </LinearLayout>
 
     <LinearLayout
@@ -215,11 +231,11 @@
             android:id="@+id/rad_sw"
             android:layout_width="0dp"
             android:layout_height="48dp"
-            android:layout_marginLeft="145dp"
-            android:layout_marginRight="145dp"
+            android:layout_marginStart="123dp"
+            android:layout_marginEnd="125dp"
             android:layout_weight="1"
             android:text="@string/sw_rad"
-            android:textSize="19sp" />
+            android:textSize="18sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -230,6 +246,7 @@
 
         <Button
             android:id="@+id/sqrt_button"
+            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
